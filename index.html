@@ -102,7 +102,7 @@
                 <a href="#navidad" class="hover:text-red-600 transition-colors text-rose-600 font-extrabold">Especial
                     Navidad 🎄</a>
                 <a href="#categorias" class="hover:text-green-600 transition-colors">Creaciones 🧶</a>
-                <a href="#nosotros" class="hover:text-green-600 transition-colors">Sobre Mí 💚</a>
+                <a href="#nosotros" class="hover:text-green-600 transition-colors">Sobre Nosotros 💚</a>
                 <a href="#contacto" class="hover:text-green-600 transition-colors">Contacto 💌</a>
             </nav>
 
@@ -220,11 +220,12 @@
         </div>
     </section>
 
-    <!-- SECCIÓN ESPECIAL CATÁLOGO NAVIDEÑO & CORPORATIVO -->
+    <!-- SECCIÓN ESPECIAL CATÁLOGO NAVIDEÑO & CORPORATIVO CON PDF -->
     <section id="navidad" class="py-12 max-w-7xl mx-auto px-4 sm:px-8">
         <div
             class="bg-gradient-to-r from-red-500 via-rose-500 to-emerald-600 rounded-5xl p-6 sm:p-10 text-white shadow-2xl relative overflow-hidden mb-10">
             <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+
                 <div class="space-y-3 text-center md:text-left">
                     <span
                         class="bg-white/20 backdrop-blur-md text-white text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider border border-white/30">
@@ -232,15 +233,29 @@
                     </span>
                     <h2 class="text-3xl sm:text-4xl font-extrabold font-title">Regalos Corporativos & Navideños 🎅</h2>
                     <p class="text-sm font-semibold text-rose-100 max-w-xl">
-                        Personalizamos detalles artesanales con el logo de tu empresa, empaques festivos y empaques
-                        individuales para colaboradores o clientes especiales.
+                        Descarga nuestro catálogo completo en PDF con precios, fotos y opciones de empaques corporativos
+                        para esta temporada.
                     </p>
                 </div>
-                <a href="https://wa.me/573106701750?text=Hola!%20Me%20gustaría%20cotizar%20regalos%20corporativos%20del%20catálogo%20navideño"
-                    target="_blank"
-                    class="bg-white text-rose-600 hover:bg-rose-50 font-title font-bold px-8 py-4 rounded-3xl shadow-lg border-2 border-rose-200 whitespace-nowrap bouncy-hover">
-                    Cotizar por WhatsApp 📲
-                </a>
+
+                <!-- Botones de acción -->
+                <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <!-- Botón para Ver/Descargar el PDF -->
+                    <a href="CATALOGO NARANJITA DULCE.pdf" target="_blank"
+                        class="bg-amber-300 hover:bg-amber-400 text-gray-900 font-title font-bold px-6 py-4 rounded-3xl shadow-lg border-2 border-white text-center whitespace-nowrap bouncy-hover flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-file-arrow-down text-lg"></i>
+                        <span>Ver Catálogo PDF 📖</span>
+                    </a>
+
+                    <!-- Botón para cotizar directo por WhatsApp -->
+                    <a href="https://wa.me/573106701750?text=Hola!%20Vi%20el%20catálogo%20en%20PDF%20y%20me%20gustaría%20cotizar%20regalos%20corporativos"
+                        target="_blank"
+                        class="bg-white text-rose-600 hover:bg-rose-50 font-title font-bold px-6 py-4 rounded-3xl shadow-lg border-2 border-rose-200 text-center whitespace-nowrap bouncy-hover flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Cotizar 📲</span>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -285,181 +300,17 @@
             -->
         </div>
     </section>
-
-    <!-- GALERÍA DE PRODUCTOS DEL CATÁLOGO REAL -->
+    <!-- GALERÍA DE PRODUCTOS DINÁMICA -->
     <section class="py-8 max-w-7xl mx-auto px-4 sm:px-8">
         <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Los productos se cargarán automáticamente aquí -->
+        </div>
 
-            <!-- Producto Navideño 1: Canastilla de Cupcakes -->
-            <div class="product-item bg-white border-4 border-green-100 rounded-5xl overflow-hidden shadow-lg bouncy-hover p-5 flex flex-col justify-between"
-                data-cat="navidad">
-                <div>
-                    <div class="relative bg-red-50 rounded-4xl overflow-hidden mb-4 border-2 border-red-100">
-                        <img src="canastilla_pancake.jpeg" alt="Canastilla de Cupcakes Navideños"
-                            class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/FECDD3/9F1239?text=Canastilla+Navideña+🎅'">
-                        <span
-                            class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">🎄
-                            Navidad • Crochet</span>
-                    </div>
-                    <h3 class="font-title font-bold text-xl text-gray-800">Canastilla de Cupcakes Navideños</h3>
-                    <p class="text-xs text-gray-500 font-semibold mt-1">Cupcake artesanal presentado en una adorable
-                        canastilla tejida a mano con motivo de Papá Noel.</p>
-                </div>
-                <div class="flex items-center justify-between pt-5 mt-4 border-t-2 border-dashed border-green-100">
-                    <span class="font-title font-extrabold text-2xl text-green-700">$30.000</span>
-                    <button onclick="addToCart('Canastilla de Cupcakes Navideños', 30000)" class="btn-theme font-title font-bold px-5 py-2.5 rounded-2xl text-sm shadow flex items-center space-x-2">
-                        <i class="fa-solid fa-plus"></i>
-                        <span>Agregar</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Producto Navideño 2: Llavero Mostacilla Personalizado -->
-            <div class="product-item bg-white border-4 border-green-100 rounded-5xl overflow-hidden shadow-lg bouncy-hover p-5 flex flex-col justify-between"
-                data-cat="navidad">
-                <div>
-                    <div class="relative bg-amber-50 rounded-4xl overflow-hidden mb-4 border-2 border-amber-100">
-                        <img src="llavero_mostacilla.jpeg" alt="Llavero Mostacilla Personalizado"
-                            class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/FEF08A/854D0E?text=Llavero+Mostacilla+✨'">
-                        <span
-                            class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">✨
-                            Corporativo • Mostacilla</span>
-                    </div>
-                    <h3 class="font-title font-bold text-xl text-gray-800">Llavero Navideño en Mostacilla</h3>
-                    <p class="text-xs text-gray-500 font-semibold mt-1">Artesanía en mostacilla personalizable con
-                        nombres, empaque especial y logo de tu empresa.</p>
-                </div>
-                <div class="flex items-center justify-between pt-5 mt-4 border-t-2 border-dashed border-green-100">
-                    <span class="font-title font-extrabold text-2xl text-green-700">$25.000</span>
-                    <button onclick="addToCart('Llavero Navideño en Mostacilla', 25000)" class="btn-theme font-title font-bold px-5 py-2.5 rounded-2xl text-sm shadow flex items-center space-x-2">
-                        <i class="fa-solid fa-plus"></i>
-                        <span>Agregar</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Producto Navideño 3: Gorrito Endulzado -->
-            <div class="product-item bg-white border-4 border-green-100 rounded-5xl overflow-hidden shadow-lg bouncy-hover p-5 flex flex-col justify-between"
-                data-cat="navidad">
-                <div>
-                    <div class="relative bg-emerald-50 rounded-4xl overflow-hidden mb-4 border-2 border-green-100">
-                        <img src="Gorrito_endulzado.jpeg" alt="Gorrito Endulzado" class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/A7F3D0/047857?text=Gorrito+Endulzado+🍬'">
-                        <span
-                            class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">🧶
-                            Crochet • Dulces</span>
-                    </div>
-                    <h3 class="font-title font-bold text-xl text-gray-800">Gorrito Endulzado Sorpresa</h3>
-                    <p class="text-xs text-gray-500 font-semibold mt-1">Divertidos gorritos tejidos a mano rellenos con
-                        dulces y tarjeta de Felices Fiestas.</p>
-                </div>
-                <div class="flex items-center justify-between pt-5 mt-4 border-t-2 border-dashed border-green-100">
-                    <span class="font-title font-extrabold text-2xl text-green-700">$15.000</span>
-                    <button onclick="addToCart('Gorrito Endulzado Sorpresa', 15000)" class="btn-theme font-title font-bold px-5 py-2.5 rounded-2xl text-sm shadow flex items-center space-x-2">
-                        <i class="fa-solid fa-plus"></i>
-                        <span>Agregar</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Producto Navideño 4: Decoración Gnomo -->
-            <div class="product-item bg-white border-4 border-green-100 rounded-5xl overflow-hidden shadow-lg bouncy-hover p-5 flex flex-col justify-between"
-                data-cat="navidad">
-                <div>
-                    <div class="relative bg-rose-50 rounded-4xl overflow-hidden mb-4 border-2 border-rose-100">
-                        <img src="Decoracion_gnomo.jpeg" alt="Decoración Árbol Gnomo" class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/FECDD3/9F1239?text=Gnomo+Navideño+🎄'">
-                        <span
-                            class="absolute top-3 left-3 bg-rose-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">🎄
-                            Amigurumi</span>
-                    </div>
-                    <h3 class="font-title font-bold text-xl text-gray-800">Decoración de Árbol Gnomo</h3>
-                    <p class="text-xs text-gray-500 font-semibold mt-1">Pequeñas figuras de gnomos tejidas a mano para
-                        adornar el árbol de Navidad o el escritorio.</p>
-                </div>
-                <div class="flex items-center justify-between pt-5 mt-4 border-t-2 border-dashed border-green-100">
-                    <span class="font-title font-extrabold text-2xl text-green-700">$20.000</span>
-                    <button onclick="addToCart('Decoración Gnomo Navideño', 20000)" class="btn-theme font-title font-bold px-5 py-2.5 rounded-2xl text-sm shadow flex items-center space-x-2">
-                        <i class="fa-solid fa-plus"></i>
-                        <span>Agregar</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Producto Crochet Standard -->
-            <div class="product-item bg-white border-4 border-green-100 rounded-5xl overflow-hidden shadow-lg bouncy-hover p-5 flex flex-col justify-between"
-                data-cat="crochet">
-                <div>
-                    <div class="relative bg-emerald-50 rounded-4xl overflow-hidden mb-4 border-2 border-green-100">
-                        <img src="sombrero_vueltiao.png" alt="Sombrero Vueltiao" class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/A7F3D0/15803D?text=Amigurumi+Naranjita'">
-                        <span
-                            class="absolute top-3 left-3 bg-white text-green-800 text-xs font-bold px-3 py-1 rounded-full border border-green-200 shadow-sm">🧶
-                            Crochet</span>
-                    </div>
-                    <h3 class="font-title font-bold text-xl text-gray-800">llavero de sombrero vueltiao</h3>
-                    <p class="text-xs text-gray-500 font-semibold mt-1">Pequeño recordatorio colombiano de un sombrero
-                        con bandera tejido a mano con hilaza 100% algodón.</p>
-                </div>
-                <div class="flex items-center justify-between pt-5 mt-4 border-t-2 border-dashed border-green-100">
-                    <span class="font-title font-extrabold text-2xl text-green-700">$25.000</span>
-                    <button onclick="addToCart('Llavero de Mostacilla', 25000)" class="btn-theme font-title font-bold px-5 py-2.5 rounded-2xl text-sm shadow flex items-center space-x-2">
-                        <i class="fa-solid fa-plus"></i>
-                        <span>Agregar</span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Producto Navideño / Mostacilla: Aretes de Botas Navideñas -->
-            <div class="product-item bg-white border-4 border-green-100 rounded-5xl overflow-hidden shadow-lg bouncy-hover p-5 flex flex-col justify-between"
-                data-cat="mostacilla">
-                <div>
-                    <div class="relative bg-rose-50 rounded-4xl overflow-hidden mb-4 border-2 border-rose-100">
-                        <img src="Aretes-mostacilla.jpeg"
-                            alt="Aretes de Botas Navideñas" class="w-full h-56 object-cover">
-                        <span
-                            class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">✨
-                            Mostacilla</span>
-                    </div>
-                    <h3 class="font-title font-bold text-xl text-gray-800">Aretes de Botas Navideñas</h3>
-                    <p class="text-xs text-gray-500 font-semibold mt-1">Hermosos aretes tejidos a mano en mostacilla con
-                        diseño navideño de botas.</p>
-                </div>
-                <div class="flex items-center justify-between pt-5 mt-4 border-t-2 border-dashed border-green-100">
-                    <span class="font-title font-extrabold text-2xl text-green-700">$20.000</span>
-                    <button onclick="addToCart('Aretes de Botas Navideñas', 20000)"
-                        class="btn-theme font-title font-bold px-5 py-2.5 rounded-2xl text-sm shadow flex items-center space-x-2">
-                        <i class="fa-solid fa-plus"></i>
-                        <span>Agregar</span>
-                    </button>
-                </div>
-            </div>
-
-
-            <!-- Producto Macramé Standard 
-            <div class="product-item bg-white border-4 border-green-100 rounded-5xl overflow-hidden shadow-lg bouncy-hover p-5 flex flex-col justify-between" data-cat="macrame">
-                <div>
-                    <div class="relative bg-emerald-50 rounded-4xl overflow-hidden mb-4 border-2 border-green-100">
-                        <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&q=80&w=600" alt="Llavero Macramé" class="w-full h-56 object-cover" onerror="this.src='https://placehold.co/600x400/A7F3D0/047857?text=Llavero+Macrame'">
-                        <span class="absolute top-3 left-3 bg-white text-emerald-800 text-xs font-bold px-3 py-1 rounded-full border border-emerald-200 shadow-sm">🪢 Macramé</span>
-                    </div>
-                    <h3 class="font-title font-bold text-xl text-gray-800">Llavero Arcoíris Menta</h3>
-                    <p class="text-xs text-gray-500 font-semibold mt-1">Llavero tejido suave en tonalidades pastel ideales para mochilas escolares.</p>
-                </div>
-                <div class="flex items-center justify-between pt-5 mt-4 border-t-2 border-dashed border-green-100">
-                    <span class="font-title font-extrabold text-2xl text-green-700">$7.50</span>
-                    <button onclick="addToCart('Llavero Macramé Menta', 7.5)" class="btn-theme font-title font-bold px-5 py-2.5 rounded-2xl text-sm shadow flex items-center space-x-2">
-                        <i class="fa-solid fa-plus"></i>
-                        <span>Agregar</span>
-                    </button>
-                </div>
-            </div>
-            -->
+        <!-- BOTONES DE PAGINACIÓN -->
+        <div id="pagination-container" class="flex justify-center items-center space-x-3 mt-10">
+            <!-- Se generan dinámicamente con JS -->
         </div>
     </section>
-
     <!-- SOBRE NOSOTROS -->
     <section id="nosotros" class="py-16 max-w-7xl mx-auto px-4 sm:px-8">
         <div
@@ -540,20 +391,66 @@
                     class="w-10 h-10 bg-green-800 hover:bg-green-700 rounded-full flex items-center justify-center text-green-200 transition-colors"><i
                         class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <p class="text-xs text-green-300 font-bold">📲 WhatsApp: 317 834 6943 | 📷 Instagram: @naranjita_dulce_manualidades</p>
+            <p class="text-xs text-green-300 font-bold">📲 WhatsApp: 317 834 6943 | 📷 Instagram:
+                @naranjita_dulce_manualidades</p>
             <p class="text-[11px] text-green-400 font-semibold pt-4 border-t border-green-800">&copy; 2026 Naranjita
                 Dulce. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!-- Enlace a tu archivo de productos -->
+    <script src="productos.js"></script>
 
     <!-- SCRIPT JS DE FUNCIONALIDAD -->
     <script>
-        // CONFIGURACIÓN: Número de WhatsApp real de Naranjita Dulce
         const WHATSAPP_NUMBER = "573178346943";
-
         let cartItemsList = [];
 
-        // MODAL DE CARRITO
+        // FUNCIÓN PARA CARGAR LOS PRODUCTOS AUTOMÁTICAMENTE EN LA PÁGINA
+        function renderizarProductos(productosAMostrar = listaProductos) {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = '';
+
+            productosAMostrar.forEach(prod => {
+                // Definir un distintivo visual según el tag/categoría
+                let badgeColor = "bg-green-100 text-green-800 border-green-200";
+                let emojiTag = "🧶";
+                if (prod.tag === 'navidad') { badgeColor = "bg-red-500 text-white"; emojiTag = "🎄"; }
+                else if (prod.tag === 'mostacilla') { badgeColor = "bg-amber-500 text-white"; emojiTag = "✨"; }
+
+                const card = document.createElement('div');
+                card.className = "product-item bg-white border-4 border-green-100 rounded-5xl overflow-hidden shadow-lg bouncy-hover p-5 flex flex-col justify-between";
+                card.setAttribute('data-cat', prod.tag);
+
+                card.innerHTML = `
+                <div>
+                    <div class="relative bg-emerald-50 rounded-4xl overflow-hidden mb-4 border-2 border-green-100">
+                        <img src="${prod.imagen}" alt="${prod.nombre}" class="w-full h-56 object-cover"
+                            onerror="this.src='https://placehold.co/600x400/A7F3D0/15803D?text=Naranjita+Dulce+🍊'">
+                        <span class="absolute top-3 left-3 ${badgeColor} text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                            ${emojiTag} ${prod.tag.toUpperCase()}
+                        </span>
+                    </div>
+                    <h3 class="font-title font-bold text-xl text-gray-800">${prod.nombre}</h3>
+                    <p class="text-xs text-gray-500 font-semibold mt-1">${prod.descripcion || 'Hecho a mano con amor y dedicación.'}</p>
+                </div>
+                <div class="flex items-center justify-between pt-5 mt-4 border-t-2 border-dashed border-green-100">
+                    <span class="font-title font-extrabold text-2xl text-green-700">$${prod.precio.toLocaleString('es-CO')}</span>
+                    <button onclick="addToCart('${prod.nombre}', ${prod.precio})" class="btn-theme font-title font-bold px-5 py-2.5 rounded-2xl text-sm shadow flex items-center space-x-2">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Agregar</span>
+                    </button>
+                </div>
+            `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Ejecutar al cargar la página
+        document.addEventListener("DOMContentLoaded", () => {
+            renderizarProductos();
+        });
+
+        // MODAL DE CARRITO Y OTRAS FUNCIONES...
         function openCartModal() {
             const modal = document.getElementById('cart-modal');
             const container = document.getElementById('cart-modal-container');
@@ -582,10 +479,10 @@
 
             if (cartItemsList.length === 0) {
                 cartItemsContainer.innerHTML = `
-                    <p id="empty-cart-msg" class="text-center text-gray-400 font-semibold text-sm py-8">
-                        ¡Tu canastito está vacío! 🍃<br><span class="text-xs">Añade algunas creaciones mágicas.</span>
-                    </p>
-                `;
+                <p id="empty-cart-msg" class="text-center text-gray-400 font-semibold text-sm py-8">
+                    ¡Tu canastito está vacío! 🍃<br><span class="text-xs">Añade algunas creaciones mágicas.</span>
+                </p>
+            `;
                 cartTotalElement.textContent = '$0.00';
                 return;
             }
@@ -594,19 +491,19 @@
             cartItemsContainer.innerHTML = cartItemsList.map((item, index) => {
                 total += item.price * item.qty;
                 return `
-                    <div class="flex items-center justify-between bg-green-50/70 p-3 rounded-2xl border-2 border-green-100">
-                        <div>
-                            <p class="font-title font-bold text-sm text-green-900">${item.name}</p>
-                            <p class="text-xs text-green-700 font-semibold">$${item.price.toLocaleString('es-CO')} x ${item.qty}</p>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <span class="font-title font-bold text-green-800 text-sm">$${(item.price * item.qty).toFixed(2)}</span>
-                            <button onclick="removeFromCart(${index})" class="text-rose-400 hover:text-rose-600 p-1 font-bold">
-                                🗑️
-                            </button>
-                        </div>
+                <div class="flex items-center justify-between bg-green-50/70 p-3 rounded-2xl border-2 border-green-100">
+                    <div>
+                        <p class="font-title font-bold text-sm text-green-900">${item.name}</p>
+                        <p class="text-xs text-green-700 font-semibold">$${item.price.toLocaleString('es-CO')} x ${item.qty}</p>
                     </div>
-                `;
+                    <div class="flex items-center space-x-2">
+                        <span class="font-title font-bold text-green-800 text-sm">$${(item.price * item.qty).toLocaleString('es-CO')}</span>
+                        <button onclick="removeFromCart(${index})" class="text-rose-400 hover:text-rose-600 p-1 font-bold">
+                            🗑️
+                        </button>
+                    </div>
+                </div>
+            `;
             }).join('');
 
             cartTotalElement.textContent = `$${total.toLocaleString('es-CO')}`;
@@ -628,7 +525,6 @@
             updateCartUI();
         }
 
-        // ENVIAR PEDIDO COMPLETO A WHATSAPP
         function sendWhatsAppOrder() {
             if (cartItemsList.length === 0) {
                 showToast('¡Tu canastito está vacío!');
@@ -641,17 +537,16 @@
             cartItemsList.forEach(item => {
                 const subtotal = item.price * item.qty;
                 total += subtotal;
-                orderText += `• ${item.name} (x${item.qty}) - $${subtotal.toFixed(2)}\n`;
+                orderText += `• ${item.name} (x${item.qty}) - $${subtotal.toLocaleString('es-CO')}\n`;
             });
 
-            orderText += `\n*Total estimado: $${total.toFixed(2)}*`;
+            orderText += `\n*Total estimado: $${total.toLocaleString('es-CO')}*`;
             orderText += "\n\n¿Tienen disponibilidad? ¡Muchas gracias! ✨";
 
             const encodedMsg = encodeURIComponent(orderText);
             window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMsg}`, '_blank');
         }
 
-        // MOSTRAR TOAST
         function showToast(msg) {
             const toast = document.getElementById('toast');
             const toastMsg = document.getElementById('toast-message');
@@ -666,19 +561,16 @@
             }, 3000);
         }
 
-        // FILTRAR CATEGORÍAS
+        // FILTRAR CATEGORÍAS MODIFICADO PARA USAR EL ARCHIVO JS
         function filterCategory(cat) {
-            const items = document.querySelectorAll('.product-item');
-            items.forEach(item => {
-                if (cat === 'all' || item.dataset.cat === cat) {
-                    item.style.display = 'flex';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+            if (cat === 'all') {
+                renderizarProductos(listaProductos);
+            } else {
+                const filtrados = listaProductos.filter(p => p.tag === cat);
+                renderizarProductos(filtrados);
+            }
         }
 
-        // ENVÍO DE FORMULARIO A WHATSAPP
         function handleContact(e) {
             e.preventDefault();
             const name = document.getElementById('contact-name').value;
