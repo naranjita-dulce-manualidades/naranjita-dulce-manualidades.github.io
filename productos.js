@@ -40,5 +40,19 @@ const listaProductos = [
         imagen: "Aretes-mostacilla.jpeg",
         tag: "mostacilla",
         descripcion: "Hermosos aretes tejidos a mano en mostacilla con diseño navideño de botas."
+    },
+    {
+        nombre: "Pesebre pequeño",
+        precio: 250000,
+        imagen: "pesebre_chiquito.jpe",
+        tag: "navidad",
+        descripcion: "Nacimiento del niño Dios tejido a mano, 5 figuritas (Maria, José, burro, buey y niño Jesus)."
+    },
+    {
+        nombre: "Pesebre de gran tamaño",
+        precio: 450000,
+        imagen: "pesebre_grande.jpe",
+        tag: "navidad",
+        descripcion: "pesebre a escala de 18cm tejido a mano, 5 figuritas (Maria, José, burro, buey y niño Jesus)."
     }
 ];
